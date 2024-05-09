@@ -70,7 +70,7 @@ app.post('/movies/', async (request, response) => {
 app.get('/movies/:movieId', async (request, response) => {
   const {movieId} = request.params
   const getMoviesQuery = `SELECT 
-   *
+   movie_name
    FROM 
    movie
    WHERE 
